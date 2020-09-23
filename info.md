@@ -1,0 +1,2 @@
+- Bugs are simply things that are broken.
+- Chores are the things you have to do that don’t actually change your product.
