@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0e9e9;
+}
+
+.container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+.container #reg-form {
+    background-color: rgb(64, 77, 77);
+    color: #ffffff;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.title h2 {
+    text-align: center;
+}
+
+div.form-section {
+    padding: 26px;
+    text-align: center;
+}
+
+div.form-section label {
+    width: 20%;
+    float: left;
+    text-align: right;
+}
+
+div.form-section input {
+    width: 70%;
+    height: 25px;
+    float: left;
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+div.form-section button {
+    float: left;
+    margin-left: 20px;
+}
+
+button.btn-signup {
+    height: 30px;
+    background-color: darkcyan;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 0;
+
+}
