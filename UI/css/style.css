@@ -2,15 +2,22 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f0e9e9;
+    background-color: #e9eff0;
 }
 
 .container {
-    overflow: hidden;
+    width: 80%;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 500px;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 .container #reg-form {
@@ -19,10 +26,12 @@ body {
     width: 50%;
     padding: 10px;
     border-radius: 5px;
+    margin-top: 100px;
 }
 
 .title h2 {
     text-align: center;
+    padding-bottom: 0;
 }
 
 div.form-section {
@@ -58,4 +67,70 @@ button.btn-signup {
     padding-right: 20px;
     border: 0;
 
+}
+
+.form-section a {
+    color: darkcyan;
+    text-decoration: none;
+}
+
+.form-section a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.nav-container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(64, 77, 77);
+    padding-top: 20px;
+    min-height: 50px;
+}
+
+header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px;
+}
+
+header #brand {
+    float: left;
+}
+header #brand h1 {
+    margin: 0;
+    color: #ffffff;
+} 
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header li.active a {
+    color: darkcyan;
+}
+
+header li a:hover {
+    color: darkcyan;
+    text-decoration: underline #ffffff;
+}
+
+footer {
+    padding: 1px;
+    text-align: center;
+    background-color: darkcyan;
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 13px;
 }
