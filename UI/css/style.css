@@ -66,7 +66,6 @@ button.btn-signup {
     padding-left: 20px;
     padding-right: 20px;
     border: 0;
-
 }
 
 .form-section a {
@@ -106,10 +105,11 @@ header li {
 header #brand {
     float: left;
 }
+
 header #brand h1 {
     margin: 0;
     color: #ffffff;
-} 
+}
 
 header nav {
     float: right;
@@ -154,7 +154,7 @@ footer {
 }
 
 #mentors-intro .pick {
-    margin-top: 40px;
+    margin-top: 30px;
     text-transform: uppercase;
 }
 
@@ -162,30 +162,139 @@ footer {
     width: 100%;
     flex-wrap: wrap;
 }
+
 #mentors-section .mentor-wrapper {
     width: 25%;
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
 }
 
-#mentors-section .mentor-wrapper  img {
+#mentors-section .mentor-wrapper img {
     max-width: 80%;
     background: transparent;
     border-radius: 25px;
     border: darkgray 1px solid;
 }
 
-#mentors-section .mentor-wrapper  p {
+#mentors-section .mentor-wrapper p {
     font-weight: 600;
     font-size: 0.8rem;
 }
 
-#mentors-section .mentor-wrapper  button {
+#mentors-section .mentor-wrapper button, #mentor-section button, #session-section button {
     background-color: darkcyan;
     width: 80%;
     padding: 6px;
+    text-align: center;
     font-size: 1.2rem;
     color: #ffffff;
     border: #ffffff;
+}
+
+button a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+button a:hover {
+    color: #000000;
+}
+
+#mentor-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#mentor-section p {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+#mentor-section h2, h3 {
+    font-weight: 900;
+    color: darkcyan;
+    margin-top: 0;
+}
+
+#mentor-section h4 {
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    margin: 0.5rem 0;
+}
+
+#mentor-section ul li {
+    font-size: 0.9rem;
+    color: rgb(0, 0, 0);
+    list-style: none;
+}
+
+#mentor-section img {
+    max-width: 100%;
+    border-radius: 25px;
+    border: darkgray 1px solid;
+}
+
+.mentor-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mentor-brief, .mentor-details {
+    padding: 30px;
+}
+
+#session-section {
+    padding: 20px
+}
+.session-brief {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#admin-section h2, #mentorship-section h2 {
+    text-align: center;
+    color: darkcyan;
+}
+
+.admin-users, .mentorship-users {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.admin-users h4, .admin-users p {
+    width: 35%;
+}
+
+.admin-users button, .mentorship-users button{
+    background-color: darkcyan;
+    width: 30%;
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
+    border: #ffffff;
+}
+
+.mentorship-users button.decline{
+    background-color: rgb(182, 9, 9);
+    color: #ffffff;
+    border: #ffffff;
+}
+
+.admin-users button a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.admin-users button a:hover {
+    color: #000000;
+}
+
+.mentorship-users p {
+    width: 35%;
 }
