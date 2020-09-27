@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 500px;
+    /* min-height: 500px; */
     overflow: hidden;
 }
 
@@ -133,4 +133,59 @@ footer {
     margin-top: 20px;
     font-size: 12px;
     line-height: 13px;
+}
+
+#mentors-intro .container {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+#mentors-intro .intro {
+    background-color: darkcyan;
+    color: rgb(221, 219, 219);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#mentors-intro h1 {
+    color: #ffffff;
+}
+
+#mentors-intro .pick {
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+#mentors-section .container {
+    width: 100%;
+    flex-wrap: wrap;
+}
+#mentors-section .mentor-wrapper {
+    width: 25%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#mentors-section .mentor-wrapper  img {
+    max-width: 80%;
+    background: transparent;
+    border-radius: 25px;
+    border: darkgray 1px solid;
+}
+
+#mentors-section .mentor-wrapper  p {
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+#mentors-section .mentor-wrapper  button {
+    background-color: darkcyan;
+    width: 80%;
+    padding: 6px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    border: #ffffff;
 }
