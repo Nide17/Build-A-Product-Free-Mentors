@@ -111,6 +111,10 @@ header #brand h1 {
     color: #ffffff;
 }
 
+header #brand h1::before {
+    content: "Free-Mentors";
+}
+
 header nav {
     float: right;
     margin-top: 10px;
@@ -297,4 +301,58 @@ button a:hover {
 
 .mentorship-users p {
     width: 35%;
+}
+
+/* RESPONSIVE-MOBILE */
+@media(max-width:768px ) {
+    .container #reg-form {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    div.form-section label {
+        width: 100%;
+        margin: 10px 20px;
+        text-align: left;
+    }
+
+    #reg-form #reg-label {
+        display: none;
+    }
+
+    div.form-section button {
+        text-align: center;
+        margin-top: 20px;
+        float: none;
+        margin-left: auto;
+    }
+
+    .form-section.check-sign {
+        padding: 0px;
+    }
+
+    .nav-container {
+        width: 100%;
+        margin: auto;
+    }
+
+    header #brand h1::before {
+        content: "F-M";
+        margin-left: 10px;
+    }
+
+    .admin-users, .mentorship-users {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: .9rem;
+        text-align: center;
+    }
+
+    .user-name {
+        display: none;
+    }
+    
 }
