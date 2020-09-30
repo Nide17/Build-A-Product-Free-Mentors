@@ -89,7 +89,11 @@ header {
     min-height: 50px;
 }
 
-header a {
+#brand a {
+    text-decoration: none;
+}
+
+header li a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -253,6 +257,7 @@ button a:hover {
 #session-section {
     padding: 20px
 }
+
 .session-brief {
     text-align: center;
     align-items: center;
@@ -275,7 +280,7 @@ button a:hover {
     width: 35%;
 }
 
-.admin-users button, .mentorship-users button{
+.admin-users button, .mentorship-users button {
     background-color: darkcyan;
     width: 30%;
     padding: 5px;
@@ -284,7 +289,7 @@ button a:hover {
     border: #ffffff;
 }
 
-.mentorship-users button.decline{
+.mentorship-users button.decline {
     background-color: rgb(182, 9, 9);
     color: #ffffff;
     border: #ffffff;
@@ -304,43 +309,37 @@ button a:hover {
 }
 
 /* RESPONSIVE-MOBILE */
-@media(max-width:768px ) {
+
+@media(max-width:768px) {
     .container #reg-form {
         width: 100%;
         border-radius: 10px;
     }
-
     div.form-section label {
         width: 100%;
         margin: 10px 20px;
         text-align: left;
     }
-
     #reg-form #reg-label {
         display: none;
     }
-
     div.form-section button {
         text-align: center;
         margin-top: 20px;
         float: none;
         margin-left: auto;
     }
-
     .form-section.check-sign {
         padding: 0px;
     }
-
     .nav-container {
         width: 100%;
         margin: auto;
     }
-
     header #brand h1::before {
         content: "F-M";
         margin-left: 10px;
     }
-
     .admin-users, .mentorship-users {
         display: flex;
         flex-direction: column;
@@ -350,9 +349,67 @@ button a:hover {
         font-size: .9rem;
         text-align: center;
     }
-
-    .user-name {
-        display: none;
+    #mentors-intro h1 {
+        font-size: 1.2rem;
     }
-    
+    #mentors-section .mentor-wrapper {
+        width: 50%;
+        margin-top: 20px;
+    }
+    #mentors-section .mentor-wrapper button, #mentor-section button, #session-section button {
+        padding: 6px;
+        font-size: 1rem;
+    }
+    .mentor-brief button {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        margin: auto;
+    }
+    button a {
+        font-size: 0.9rem;
+    }
+    .intro p {
+        font-size: .9rem;
+    }
+    .admin-users p.user-name {
+        margin: 0;
+    }
+    .admin-users button, .mentorship-users button {
+        margin: 5px;
+    }
+    #mentor-section {
+        padding: 0;
+    }
+    #mentor-section .container {
+        width: 90%;
+        flex-direction: column;
+    }
+    #mentor-section ul li, #mentor-section p {
+        font-size: 0.8rem;
+    }
+    #mentor-section h2 {
+        font-size: 1rem;
+    }
+    #mentor-section h3 {
+        font-size: .9rem;
+        text-align: center;
+    }
+    #mentor-section h4 {
+        font-size: .89rem;
+    }
+    .mentor-brief, .mentor-details {
+        padding: 10px;
+    }
+    #mentor-section h2, h3 {
+        margin-top: 10px;
+    }
+
+    #mentor-section img {
+        max-width: 60%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
 }
