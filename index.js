@@ -2,6 +2,11 @@
 const express = require('express');
 const app = express();
 
+// test
+// app.use('/', (req, res) => {
+//     res.send('hello!');
+//  })
+
 // Mentors
 app.use('/api/mentors', require('./routes/api/mentors'));
 

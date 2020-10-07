@@ -29,8 +29,8 @@ mentorRouter.get('/', (req, res) => {
     }
     res.json(
         {
-            "status": 201,
-            "message": "Mentors list",
+            "status": 200,
+            // "message": "Mentors list",
             "data": mentorsData
         }
     );
@@ -38,14 +38,14 @@ mentorRouter.get('/', (req, res) => {
 
 
 // Get one
-mentorRouter.get("/:id", (req, res) => {
-    const mentorId = req.params.id;
-    const mentor = mentorsData.find(_mentor => _mentor.id === mentorId);
+mentorRouter.get("/:mentorId", (req, res) => {
+    const mentorId = req.params.mentorId;
+    const mentor = mentorsData.find(_mentor => _mentor.mentorId === mentorId);
 
     if (mentor) {
-        res.status(201).json({
-            "status": 201,
-            "message": "Mentor found",
+        res.status(200).json({
+            "status": 200,
+            // "message": "Mentor found",
             "data": mentor
         });
     } else {
@@ -73,7 +73,7 @@ mentorRouter.post('/', (req, res) => {
     // return updated list
     res.status(201).json({
         "status": 201,
-        "message": "Mentors list",
+        // "message": "Mentors list",
         "data": mentorsData
     });
 });
