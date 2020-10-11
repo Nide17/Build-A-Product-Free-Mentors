@@ -12,7 +12,7 @@ mentorRouter.use(bodyParser.json());
 app.use(express.json({ extended: false }))
 
 // Import mentors
-let mentorsData = require('../../mentors');
+let mentorsData = require('../../data/mentors');
 
 
 /*
@@ -54,28 +54,6 @@ mentorRouter.get("/:mentorId", (req, res) => {
             "error": `mentor ${mentorId} doesn't exist`
         })
     }
-});
-
-
-/*
-// Post an item
-// POST /items
-*/
-mentorRouter.post('/', (req, res) => {
-
-    const mentor = req.body;
-    console.log('Adding new mentor: ', mentor);
-
-    // add new mentor to array
-    mentorsData.push(mentor)
-    // console.log(req.body);
-
-    // return updated list
-    res.status(201).json({
-        "status": 201,
-        // "message": "Mentors list",
-        "data": mentorsData
-    });
 });
 
 module.exports = mentorRouter;

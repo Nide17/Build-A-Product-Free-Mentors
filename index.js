@@ -26,6 +26,9 @@ app.use('/api/mentors', require('./routes/api/mentors'));
 //  });
 
 
+// Users
+app.use('/api/auth', require('./routes/api/auth/users'));
+
 const port = 4000;
 
 app.listen(port, () => {
